@@ -155,7 +155,6 @@ label {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .search-button:hover {
@@ -168,8 +167,8 @@ label {
 }
 
 .footer {
-  background-color: #03628C; 
-  color: white;
+  background-color: #F6FAFA; 
+  color: #03628C;
   padding: 20px 0;
   text-align: center; 
   font-family: 'Trebuchet MS';
@@ -181,12 +180,15 @@ label {
 }
 
 .footer-content a {
-  color: #009DA9; 
   text-decoration: none; 
+  color: #03628C;
+
 }
 
 .footer-content a:hover {
   text-decoration: underline; 
+  color: #009DA9; 
+
 }
 
 h1, h2, h3, h4, h5, h6, p {
