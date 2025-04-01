@@ -1,3 +1,9 @@
+body {
+  overflow-x: hidden;
+  background-color: #F6FAFA; 
+
+}
+
 .logo-container {
   display: flex;
   align-items: baseline;
@@ -25,6 +31,7 @@
 .login-btn:hover {
   text-decoration: underline; 
 }
+
 header {
   background-color: #03628C;
 }
@@ -32,10 +39,11 @@ header {
 .navbar {
   display: flex;
   justify-content: space-evenly;  
-  width: 100%;
-  flex-wrap: nowrap;   
-  font-size: 19px;
+  
 
+  width: 100%;
+  /* flex-wrap: wrap;    */
+  font-size: 19px;
 }
 
 .navbar ul {
@@ -43,6 +51,7 @@ header {
   margin: 0;
   padding: 0;
   display: flex;
+  
 }
 
 .navbar li {
@@ -50,12 +59,16 @@ header {
 }
 
 .navbar a {
+  background-color: #03628C;
   color: white;
   text-decoration: none;
+  justify-content: space-between;
   padding: 0px 105px;
   display: block;
   height: 100%;
-  line-height: 50px; 
+  /* line-height: 50px; */
+  line-height: 250%; 
+ 
   text-align: center; 
   white-space: nowrap; 
 }
@@ -66,7 +79,7 @@ header {
   background-color: #009DA9;
   width: 100%;
   text-align: left;
-  padding: 0px 0px; 
+  /* padding: 0px 0px;  */
 }
 
 .dropdown-content a {
@@ -116,6 +129,8 @@ label {
   align-items: center; 
   justify-content: center;
   height: 600px;
+  /* height: 100%; */
+
   width: 100%;
   background-image: url("./assets/ventnor.jpg");
   background-size: cover; 
@@ -194,5 +209,151 @@ label {
 h1, h2, h3, h4, h5, h6, p {
   font-family: 'Trebuchet MS';
 }
+
+
+/* for tablets */
+@media (min-width: 2000px) and (max-width: 4400px) { /* for large desktops and tablets */
+
+  .login-btn {
+    font-size: 44px;
+    transition: text-decoration 0.3s ease; 
+  }
+
+  .navbar a {
+    padding: 0px 25px;
+    width: 100%;
+    font-size: 44px;
+
+  }
+  .main-container {
+    height: 1600px;
+  }
+
+  .rectangle-background {
+    padding: 55px;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .search-bar {
+    width: 650px;
+    font-size: 36px;
+  }
+
+  .search-button {
+    font-size: 36px;
+  }
+
+  label {
+    font-size: 36px;
+    cursor: pointer;
+  }
+    .footer-content p {
+      font-size: 36px; 
+    }
+    
+  }
+
+
+/* for tablets */
+@media (max-width: 1415px) {  
+
+  .navbar a {
+   
+    padding: 0px 25px;
+
+  }
+}
+  
+ 
+
+
+/* for phones */
+@media (max-width: 630px) {  
+
+  .logo-container {
+    flex-direction: column;
+   height: 80px;
+  } 
+
+  #siteLogo{
+    width: 350px;
+    height: 80px;
+  }
+
+  .navbar a {
+   
+    padding: 0px 0px;
+    color:#03628C;
+    font-size: 20px; 
+
+  }
+
+  .navbar a {
+    font-size: 0; /* Hide text s*/
+    display: inline-block;
+    width: 60px;
+    height: 15px;
+    position: relative;
+  }
+
+  /* Default hamburger icon */
+  .navbar a::before {
+    content: "☰"; /* Hamburger icon */
+    font-size: 40px;
+    display: block;
+    text-align: left;
+    position: absolute;
+
+    transform: translate(-50%, -50%);
+  }
+  
+
+  .navbar a:first-of-type::before {
+    content: "☰"; /* Hamburger icon */
+    font-size: 24px;
+    display: block;
+
+  }
+  .navbar li:nth-child(1) a::before {
+    color: white;
+  }
+
+  .navbar li:nth-child(1) a:hover::before {
+    color: #009DA9;
+  }
+
+
+  .main-container {
+    height: 700px;
+  } 
+
+  .rectangle-background {
+    padding: 15px;
+  }
+
+  .search-box {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+  }
+
+  .search-bar {
+    width: 60px;
+    font-size: 16px;
+  }
+
+  .search-button {
+    font-size: 16px;
+  }
+
+
+}
+  
+
 
 /*used chat to help with search bar container and css
